@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Details</title>
+    <style>
+        table,
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Todo name</th>
+            <th>Todo created at</th>
+            <th>Todo urgency</th>
+            <th>Todo status</th>
+        </tr>
+        <tr>
+            <td>{{ todo.title }}</td>
+            <td>{{ todo.created_at }}</td>
+            <td>{{ todo.urgency }}</td>
+            <td>{{ todo.status }}</td>
+        </tr>
+    </table>
+    <form method="post" , action="">
+        <input type="submit" value="Mark todo as completed">
+    </form>
+</body>
+
+</html>

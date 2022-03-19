@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Todo list</title>
+</head>
+
+<body>
+    <h1>TODODO</h1>
+    <ul>
+        {% for id, todo in todos %}
+        <li><a href="{{url_for('details', id=id )}}">{{ todo.title }}</a></li>
+        {% endfor%}
+    </ul>
+    <a href="/addtodo">Add a new todo</a>
+</body>
+
+</html>
